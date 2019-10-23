@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/c27db661f3.js"></script>
+
+    <title>HM Asignment</title>
+  </head>
+
+  <body>
+    <nav class="navbar bg-primary">
+      <h1>
+        <i class="fas fa-flag p-1"></i>
+        Countries
+      </h1>
+      <h4>Search to find countries</h4>
+    </nav>
+
+    <div class="container searchContainer">
+      <div class="search card card-body border-radius">
+        <h2>Search Countries</h2>
+        <p>
+          Enter a country name click button to add to search history
+        </p>
+        <input
+          type="text"
+          id="searchCountry"
+          class="form border-radius"
+          placeholder="Coutryname...."
+        />
+      </div>
+
+      <div id="partialSearchResult"></div>
+
+      <div class="card border-radius">
+        <h3 class="all-center mb-10">Search History</h3>
+
+        <ul id="selectedResult"></ul>
+        <button
+          onclick="ui.clearResult()"
+          class="btn btn-clear all-center border-radius"
+        >
+          Clear Search History
+        </button>
+      </div>
+    </div>
+
+    <footer class="all-center">
+      <hr />
+      <p class="light-color all-center p-1">
+        &copy; 2019 Christoffer, All rights reserved
+      </p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/ui.js"></script>
+    <script src="./script/apiCall.js"></script>
+    <script src="./script/app.js"></script>
+  </body>
+</html>
